@@ -3410,10 +3410,10 @@
 		(uuid "58cd0ac3-8fbc-4d72-b4f5-52f19fd106f1")
 	)
 	(junction
-		(at 201.93 110.49)
+		(at 115.57 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "77d8e8f3-7eec-4518-9875-1687da48fd25")
+		(uuid "65beb334-f421-41d3-a740-f78b5bb6bd44")
 	)
 	(junction
 		(at 58.42 66.04)
@@ -3432,6 +3432,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a275c188-e490-49ae-9cd4-c6c1a2f32880")
+	)
+	(junction
+		(at 115.57 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bd778267-026b-4421-88d9-3f95792b8fd4")
 	)
 	(junction
 		(at 204.47 67.31)
@@ -3603,7 +3609,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 107.95) (xy 201.93 110.49)
+			(xy 115.57 100.33) (xy 115.57 102.87)
 		)
 		(stroke
 			(width 0)
@@ -3720,6 +3726,16 @@
 			(type default)
 		)
 		(uuid "48215c63-6d78-4949-a2dc-8f52cb7dba0c")
+	)
+	(wire
+		(pts
+			(xy 115.57 102.87) (xy 119.38 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a543055-0df3-4bb8-9d6c-45643db3da2b")
 	)
 	(wire
 		(pts
@@ -3890,16 +3906,6 @@
 			(type default)
 		)
 		(uuid "8624ce39-4531-4656-8610-2422ef3eaa79")
-	)
-	(wire
-		(pts
-			(xy 201.93 110.49) (xy 196.85 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ec86a78-210c-403d-93f7-ff56b4f5aae2")
 	)
 	(wire
 		(pts
@@ -4163,16 +4169,6 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 110.49) (xy 201.93 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f294db53-fb2c-4c9d-b3b1-5fc8b2036a4a")
-	)
-	(wire
-		(pts
 			(xy 111.76 107.95) (xy 115.57 107.95)
 		)
 		(stroke
@@ -4212,7 +4208,7 @@
 		(uuid "fe152626-8b06-42c4-bca7-623e24b5b32e")
 	)
 	(label "Pulse"
-		(at 204.47 110.49 0)
+		(at 196.85 110.49 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4333,7 +4329,7 @@
 		(uuid "cb5ccd01-8264-4a3e-9bc3-92ab5e14071b")
 	)
 	(label "Pulse"
-		(at 115.57 102.87 0)
+		(at 119.38 102.87 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4850,6 +4846,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 115.57 105.41 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2a7c67f5-9818-48af-b79c-eca22b4fc5fa")
+		(property "Reference" "C7"
+			(at 118.11 104.1335 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100n"
+			(at 118.11 106.6735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 115.57 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 115.57 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 115.57 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d741ab3f-5c83-404d-bc3b-30de547c2221")
+		)
+		(pin "1"
+			(uuid "315446fa-6552-4ee4-ba92-b00a40b5a926")
+		)
+		(instances
+			(project "MainsFrequencyMonitor"
+				(path "/f5b99735-4766-4376-b536-e49ae93be466"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 204.47 57.15 0)
 		(unit 1)
@@ -5330,7 +5405,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 201.93 105.41 0)
+		(at 115.57 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5339,7 +5414,7 @@
 		(fields_autoplaced yes)
 		(uuid "5570e87a-d52a-47cb-8020-80ee284f5683")
 		(property "Reference" "R5"
-			(at 203.4286 104.1978 0)
+			(at 117.0686 96.5778 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5348,7 +5423,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 203.4286 106.6221 0)
+			(at 117.0686 99.0021 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5357,7 +5432,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 201.93 105.41 0)
+			(at 115.57 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5366,7 +5441,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 201.93 105.41 0)
+			(at 115.57 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5375,7 +5450,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 201.93 105.41 0)
+			(at 115.57 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5384,7 +5459,7 @@
 			)
 		)
 		(property "LCSC" "C25804"
-			(at 201.93 105.41 0)
+			(at 115.57 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7122,7 +7197,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 201.93 102.87 0)
+		(at 115.57 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7131,7 +7206,7 @@
 		(fields_autoplaced yes)
 		(uuid "bd396c10-21b3-4091-8ec6-94ba64c11419")
 		(property "Reference" "#PWR017"
-			(at 201.93 106.68 0)
+			(at 115.57 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7140,7 +7215,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 201.93 98.7369 0)
+			(at 115.57 91.1169 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7148,7 +7223,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 201.93 102.87 0)
+			(at 115.57 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7157,7 +7232,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 201.93 102.87 0)
+			(at 115.57 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7166,7 +7241,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 201.93 102.87 0)
+			(at 115.57 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
