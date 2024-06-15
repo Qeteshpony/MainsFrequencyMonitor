@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/Qeteshpony/MainsFrequencyMonitor/compare/v1.0.0...v1.0.1) (2024-06-15)
+
+
+### Bug Fixes
+
+* add capacitor to optocouplers output ([5ca2877](https://github.com/Qeteshpony/MainsFrequencyMonitor/commit/5ca2877cb01ab06d6268d75e7aa877d265d5963e))
+
 ## [1.0.0](https://github.com/Qeteshpony/MainsFrequencyMonitor/compare/v1.0.0...v1.0.0) (2024-05-26)
 
 
